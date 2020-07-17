@@ -1,23 +1,43 @@
 @import "variables.scss";
 
 body {
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: $background;
     color: $primary;
+
+    a {
+        color: $secondary;
+        text-decoration: none;
+
+        &:hover {
+            color: $tertiary;
+        }
+    }
 }
 
 header {
 
-    .inner-wrapper {
-        
-        max-width: 1080px;
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        border-bottom: thin solid $tertiary;
+    text-align: center;
+    border-bottom: thin solid $accent;
+    margin-bottom: 30px;
 
-        h1 {
-            font-weight: 200;
-            font-size: 32pt;
+    h1 {
+        font-weight: 200;
+        font-size: 32pt;
+
+        @media (max-width: $sm) {
+            font-size: 24pt;
+        }
+
+        @media (max-width: $xs) {
+            font-size: 16pt;
         }
     }
+}
+
+.inner-wrapper {
+        
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
 }

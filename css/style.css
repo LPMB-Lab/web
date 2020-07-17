@@ -1,18 +1,40 @@
 body {
+  font-family: "Source Sans Pro", sans-serif;
   background-color: #222;
   color: #e0e0e0;
 }
-
-header .inner-wrapper {
-  max-width: 1080px;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  border-bottom: thin solid #5cf;
+body a {
+  color: #808080;
+  text-decoration: none;
 }
-header .inner-wrapper h1 {
+body a:hover {
+  color: #5cf;
+}
+
+header {
+  text-align: center;
+  border-bottom: thin solid #5ec;
+  margin-bottom: 30px;
+}
+header h1 {
   font-weight: 200;
   font-size: 32pt;
+}
+@media (max-width: 36em) {
+  header h1 {
+    font-size: 24pt;
+  }
+}
+@media (max-width: 20em) {
+  header h1 {
+    font-size: 16pt;
+  }
+}
+
+.inner-wrapper {
+  max-width: 768px;
+  width: 100%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
