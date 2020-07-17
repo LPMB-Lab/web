@@ -13,6 +13,10 @@ body {
             color: $tertiary;
         }
     }
+
+    p {
+        font-size: 12pt;
+    }
 }
 
 header {
@@ -20,18 +24,32 @@ header {
     text-align: center;
     border-bottom: thin solid $accent;
     margin-bottom: 30px;
+    
+    #header-inner {
 
-    h1 {
-        font-weight: 200;
-        font-size: 32pt;
-
-        @media (max-width: $sm) {
-            font-size: 24pt;
+        #title {
+            
+            h1 {
+    
+                font-weight: 200;
+                font-size: 40pt;
+    
+                @media (max-width: $sm) {
+                    font-size: 28pt;
+                }
+    
+                @media (max-width: $xs) {
+                    font-size: 18pt;
+                }
+            }
         }
+    }
 
-        @media (max-width: $xs) {
-            font-size: 16pt;
-        }
+}
+
+main {
+    @media (max-width: $md) {
+        padding: 0 2%;
     }
 }
 

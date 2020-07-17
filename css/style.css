@@ -10,24 +10,33 @@ body a {
 body a:hover {
   color: #5cf;
 }
+body p {
+  font-size: 12pt;
+}
 
 header {
   text-align: center;
   border-bottom: thin solid #5ec;
   margin-bottom: 30px;
 }
-header h1 {
+header #header-inner #title h1 {
   font-weight: 200;
-  font-size: 32pt;
+  font-size: 40pt;
 }
 @media (max-width: 36em) {
-  header h1 {
-    font-size: 24pt;
+  header #header-inner #title h1 {
+    font-size: 28pt;
   }
 }
 @media (max-width: 20em) {
-  header h1 {
-    font-size: 16pt;
+  header #header-inner #title h1 {
+    font-size: 18pt;
+  }
+}
+
+@media (max-width: 48em) {
+  main {
+    padding: 0 2%;
   }
 }
 
