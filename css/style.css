@@ -1,14 +1,12 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #222;
-  color: #e0e0e0;
 }
 body a {
   color: #808080;
   text-decoration: none;
 }
 body a:hover {
-  color: #5cf;
+  color: #2af;
 }
 body p {
   font-size: 12pt;
@@ -16,7 +14,7 @@ body p {
 
 header {
   text-align: center;
-  border-bottom: thin solid #5ec;
+  border-bottom: thin solid #444;
   margin-bottom: 30px;
 }
 header #header-inner #title h1 {
