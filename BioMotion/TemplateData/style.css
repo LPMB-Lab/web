@@ -2,8 +2,29 @@
 /* .webgl {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);} */
 
 body {
-  background-color: #102a18;
+  background-color: #121014;
+  color: #f2f2f2;
+  font-family: Raleway;
 }
+
+header {
+  text-align: center;
+  font-size: 2em;
+  padding: 1em 0.5em;
+}
+
+main {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  line-height: 1.5em;
+}
+
+main .description {
+  padding: 1em 0.5em;
+}
+
+.webgl {width: 100%; padding: 1em 0.5em; margin: auto;}
 
 .webgl .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .webgl .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
