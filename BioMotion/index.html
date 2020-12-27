@@ -13,13 +13,31 @@
     </script>
   </head>
   <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">BioMotion</div>
+    <header>
+      BioMotion
+    </header>
+    <main>
+      <div class="description">
+        Press <kbd>Space</kbd> to start the BioMotion program.
+
+        A PLD (point light display) will appear and begin walking towards you, and disappear after a short time. Just before it disappears, it will do one of three things:
+        <ul>
+          <li>continue going straight,</li>
+          <li>Start turning left, or</li>
+          <li>start turning right.</li>
+        </ul>
+
+        If you think the PLD continued go straight, press <kbd>Up</kbd> or <kbd>Down</kbd>; if you think it turned to your left, press <kbd>Left</kbd>; if you think it turned to your right, press <kbd>Right</kbd>.
       </div>
-    </div>
+      <div class="webgl-content">
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          <div class="title">BioMotion</div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
