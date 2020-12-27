@@ -24,6 +24,15 @@ main .description {
   padding: 1em 0.5em;
 }
 
+kbd {
+  font-family: Inconsolata;
+  text-transform: uppercase;
+  padding: 0.2em 0.5em;
+  margin: 0 0.2em;
+  border: 1px solid grey;
+  border-radius: 0.25em;
+}
+
 .webgl {width: 100%; padding: 1em 0.5em; margin: auto;}
 
 .webgl .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
